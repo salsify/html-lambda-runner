@@ -3,7 +3,7 @@ const _ = require('lodash');
 const project = require('./project');
 
 module.exports = (context, event, root) => {
-  const userInject = require(project.path('inject'));
+  const userInject = require(project.path('templateData'));
 
   if (!root) root = '';
 
