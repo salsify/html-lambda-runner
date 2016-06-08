@@ -1,6 +1,8 @@
+'use strict';
+
 const path = require('path');
 
-var _path = (file) => {
+let _path = (file) => {
 	return path.join(process.cwd(), file);
 }
 
