@@ -1,15 +1,30 @@
 {
   "name": "html-lambda-runner",
   "version": "1.0.0",
-  "description": "The library for running HTML Lambda",
+  "description": "A module for developing HTML generating Lambda functions",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.3.17",
     "lodash": "^4.13.1"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salsify/html-lambda-runner.git"
+  },
+  "keywords": [
+    "html",
+    "lambda",
+    "aws",
+    "amazon"
+  ],
+  "author": "Cameron Wheeler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/salsify/html-lambda-runner/issues"
+  },
+  "homepage": "https://github.com/salsify/html-lambda-runner#readme",
 }
