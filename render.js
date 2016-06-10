@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const _ = require('lodash');
+const doT = require('dot');
 const project = require('./project');
 
 module.exports = (context, event, root) => {
@@ -13,7 +13,7 @@ module.exports = (context, event, root) => {
   let style = fs.readFileSync(path.join(root, 'style.css')).toString();
   let template = fs.readFileSync(path.join(root, 'index.html')).toString();
 
-  let compiled = _.template(template);
+  let compiled = doT.template(template);
   let html = compiled(Object.assign({}, {style: style}, userInject(context, event)));
 
   return html;
