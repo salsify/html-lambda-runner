@@ -5,7 +5,7 @@ const fs = require('fs');
 const render = require('./render');
 const project = require('./project');
 
-var run = (event, context, callback) => {
+let run = (event, context, callback) => {
   const awsConfig = require(project.path('config/aws-config'));
   let kms = new AWS.KMS({region: awsConfig.region});
 
