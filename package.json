@@ -19,9 +19,10 @@
     "html",
     "lambda",
     "aws",
-    "amazon"
+    "amazon",
+    "salsify"
   ],
-  "author": "Cameron Wheeler",
+  "author": "Salsify",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/salsify/html-lambda-runner/issues"
